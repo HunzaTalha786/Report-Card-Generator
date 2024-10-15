@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body {
+    background-color:cadetblue;
+}
+h1{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3.6rem;
+    color:white;
+}
+h3{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2.2rem;
+    color:cadetblue;  
+    border-bottom: 3px solid cadetblue ;
+}
+#report-card{
+    width: 30%;
+    height: 65vh;
+    margin: 3rem auto ;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: rgb(226, 230, 230);
+    box-shadow: 10px 10px 10px rgb(167, 166, 166);
+    font-size: 1rem;
+    color:cadetblue;
+
+}
+
+#result{
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+#result p{
+    width: 100%;
+    display: flex;
+}
+
+#result strong{
+    width: 55%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.btn{
+    font-size: 1.3rem;
+    padding: 1rem;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+body{
+    animation: transitionIn 1s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+
+
+    }
+
+}
+
+
+@media(max-width:1360px){
+    #report-card{
+        width: 40%;
+    }
+}
+@media(max-width:850px){
+    #report-card{
+        width: 60%;
+    }
+}
+@media(max-width:585px){
+    #report-card{
+        width: 90%;
+    }
+}
+@media(max-width:460px){
+    #result{
+        font-size: 1.7rem;
+}
+}
+@media(max-width:360px){
+    h1{
+        font-size: 2.5rem;  
+    }
+    h3{
+        font-size: 2.2rem;
+    }
+    #result{
+        font-size: 1.5rem;
+}
+
+    
+}
